@@ -1,0 +1,43 @@
+#gameover {
+    text-align: center;
+    max-width: 500px;    
+    display: flex;
+    flex-direction: column;
+}
+
+#gameover h1 {
+    margin-bottom: 1rem;
+    color: blueviolet;
+}
+
+#gameover p {
+    margin: 0;
+    padding: 10px;
+}
+
+#gameover img {
+    margin-top: 2rem;
+    object-fit: contain;
+    padding: 0;
+    margin: 0;
+}
+
+
+.image-container1 {
+    display: inline-block; /* ou block, dependendo do layout desejado */
+    animation: spinAnimation 2s infinite;
+    transform-origin: center center; /* Ponto de origem da rotação */
+}
+
+@keyframes spinAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
